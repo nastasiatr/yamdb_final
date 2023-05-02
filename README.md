@@ -1,7 +1,7 @@
 # ЯП - Спринт 16 - CI и CD проекта api_yamdb. Python-разработчик (бекенд) (Яндекс.Практикум)
  
-![Gthtqnb](Django-app workflow]https://github.com/nastasiatr/yamdb_final/workflows/yamdb_workflow.yml/badge.svg]
- https://github.com/nastasiatr/yamdb_final/actions
+
+![example workflow](https://github.com/nastasiatr/yamdb_final/blob/master/.github/workflows/yamdb_workflow.yml/badge.svg)
 
 ## Описание 
 Проект YaMDb собирает отзывы пользователей на произведения. Произведения делятся на категории:«Книги», «Фильмы», «Музыка». Список категорий может быть расширен (например, можно добавить категорию «Изобразительное искусство» или «Ювелирка»). Настроика для приложения Continuous Integration и Continuous Deployment, реализация:
