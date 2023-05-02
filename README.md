@@ -1,9 +1,14 @@
-# Проект YaMDb (Контейнеризация проекта, docker-compose) 
+# ЯП - Спринт 16 - CI и CD проекта api_yamdb. Python-разработчик (бекенд) (Яндекс.Практикум)
  
-Проект развернут по адресу: http://localhost:8000/redoc/
+![Gthtqnb](Django-app workflow]https://github.com/nastasiatr/yamdb_final/workflows/yamdb_workflow.yml/badge.svg]
+ https://github.com/nastasiatr/yamdb_final/actions
 
 ## Описание 
-Проект Yamdb собирает отзывы пользователей на произведения. Произведения делятся на категории: «Книги», «Фильмы», «Музыка». Список категорий может быть расширен администратором.Произведена упаковка в контейнер проекта YaMDb. 
+Проект YaMDb собирает отзывы пользователей на произведения. Произведения делятся на категории:«Книги», «Фильмы», «Музыка». Список категорий может быть расширен (например, можно добавить категорию «Изобразительное искусство» или «Ювелирка»). Настроика для приложения Continuous Integration и Continuous Deployment, реализация:
+
+автоматический запуск тестов,
+обновление образов на Docker Hub,
+автоматический деплой на боевой сервер при пуше в главную ветку main.
  
 ## Стек технологий: 
 * Python 3.7 
@@ -93,6 +98,11 @@ docker cp fixtures.json <id>:app/
 docker-compose exec web python manage.py loaddata fixtures.json 
 ``` 
  
+
+Документация API YaMDb
+Документация доступна по эндпойнту: http://localhost:8000/redoc/
+
+
 ### Автор работы: 
  
 Трусова Анастасия (https://github.com/nastasiatr) 
