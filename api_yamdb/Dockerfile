@@ -1,8 +1,10 @@
 FROM python:3.7
 
 WORKDIR /app
-COPY . .
-RUN pip3 install -r api_yamdb/requirements.txt --no-cache-dir
+
+COPY . /app
+
+RUN pip3 install -r requirements.txt --no-cache-dir
 
 LABEL author='Nastya' link_to_github='https://github.com/nastasiatr'
 
