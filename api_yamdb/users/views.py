@@ -1,4 +1,3 @@
-from api.permissions import AdminOnly
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404
@@ -9,6 +8,8 @@ from rest_framework.response import Response
 from rest_framework.templatetags.rest_framework import data
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
+
+from api.permissions import AdminOnly
 from users.models import User
 from users.serializers import (GetTokenSerializer, NotAdminSerializer,
                                SignUpSerializer, UsersSerializer)
