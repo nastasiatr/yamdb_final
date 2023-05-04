@@ -4,7 +4,9 @@ WORKDIR /app
 
 COPY . /app
 
-RUN pip3 install -r api_yamdb/requirements.txt --no-cache-dir
+RUN python -m pip install --upgrade pip
+
+RUN pip3 install -r requirements.txt --no-cache-dir
 
 LABEL author='Nastya' link_to_github='https://github.com/nastasiatr'
 
