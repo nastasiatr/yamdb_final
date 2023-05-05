@@ -2,11 +2,13 @@ FROM python:3.7
 
 WORKDIR /app
 
-COPY . /app
+COPY /api_yamdb/requirements.txt .
 
 RUN python -m pip install --upgrade pip
 
-RUN pip3 install -r api_yamdb/requirements.txt --no-cache-dir
+RUN pip install -r /app/requirements.txt
+
+COPY /api_yamdb/ .
 
 LABEL author='Nastya' link_to_github='https://github.com/nastasiatr'
 
