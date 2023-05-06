@@ -17,7 +17,7 @@ services:
 
 
   web:
-    image: trusova/yamdb_final:v4
+    image: trusova/yamdb:v1
     restart: always
     volumes:
       - static_value:/app/static/
