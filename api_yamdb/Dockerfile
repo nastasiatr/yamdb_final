@@ -2,7 +2,7 @@ FROM python:3.7
 
 WORKDIR /app
 
-COPY requirements.txt /app
+COPY api_yamdb/requirements.txt /.
 
 RUN python -m pip install --upgrade pip
 
