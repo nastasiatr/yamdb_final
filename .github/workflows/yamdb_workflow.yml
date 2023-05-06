@@ -57,7 +57,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: trusova/yamdb_final:v3
+          tags: trusova/yamdb_final:v4
           file: api_yamdb/Dockerfile
 
   deploy:
